@@ -1,0 +1,10 @@
+// Генерация случайного символа
+const allSymbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+const randomIndex = Math.floor(Math.random() * allSymbols.length);
+const pressedKey = allSymbols[randomIndex];
+
+// Создаем переменную с сообщением
+const loggerMessage = `Вы нажали ${pressedKey} !!!`;
+
+// Выводим сообщение в alert
+alert(loggerMessage);
